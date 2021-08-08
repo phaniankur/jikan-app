@@ -8,7 +8,7 @@ import Button from './Button'
 function JikanApp() {
 const [jikanData, setjikanData] = useState([])
 const [searchData, setsearchData] = useState('')
-
+ const url='https://api.jikan.moe/v3/search/anime'
 
     function handleChange(e) {
         setsearchData(e.target.value)
@@ -20,15 +20,16 @@ const [searchData, setsearchData] = useState('')
         //alert('clicked')
         e.preventDefault()
         
-        axios.get('https://api.jikan.moe/v3/search/anime',
+        axios.get(url,
         {
             params:{
                  q:{searchData},
                  limit: 50,
             }
         })
-        //.then(data=> console.log(data.data.results))
-        .then(res=> setjikanData(res.data.results))
+        .then(res=> {
+            setjikanData(res.data.results)
+        })
         .catch(err=> console.log(err))
     }
 
@@ -60,7 +61,12 @@ const [searchData, setsearchData] = useState('')
                     </form>
                     
                 </Box>
-                
+                <Box
+                display= {searchData? 'block': 'none'}
+                fontWeight='normal'>
+                    
+                    {url}?q={searchData}
+                </Box>
                 
             </Box>
 

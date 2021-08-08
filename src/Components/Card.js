@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     marginTop: '0.5rem',
     //background: 'red',
     maxWidth: 280,
-    height: 450,
+    height: 500,
     display: 'block',
     flexDirection: 'row',
     borderRadius: '12px',
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
     fontWeight: 'bold',
-    fontSize: '20px',
+    fontSize: '16px',
   }
 });
 
@@ -48,7 +48,7 @@ export default function MediaCard({url,image_url, title}) {
             title={title}
         />
         <CardContent>
-          <Typography className={classes.title} gutterBottom variant="h5" component="h2" >
+          <Typography className={classes.title} gutterBottom variant="h6" component="h2" >
             {title}
           </Typography>
           
