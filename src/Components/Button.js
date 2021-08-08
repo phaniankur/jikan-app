@@ -15,7 +15,7 @@ export default function ContainedButtons({value}) {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">{value}</Button>
+      <Button type= 'submit' variant="contained">{value}</Button>
       
     </div>
   );

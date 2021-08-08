@@ -39,22 +39,27 @@ const [searchData, setsearchData] = useState('')
         <Box
         //bgcolor='red'
         display='flex'
-        //flexDirection='column'
+        flexDirection='column'
         justifyContent='center'
+        alignItems='center'
+        mt='2rem'
         >
                 <Box
-                    fontSize='22px'
+                    fontSize='4rem'
                     fontWeight='bold'
                     color='white'
                     >
                         Jikan API
                 </Box>
                 <Box
-                
+                display='flex'
+                // /flexDirection='row'
+                justifyContent='center'
+                alignItems='center'
                 >
                     <form onSubmit={handleClick}>
                         <InputBase required={true} type='text' placeholder='Seach Your Anime...' onChange={handleChange}/>
-                        <button >search</button>
+                        
                         <Button value='Search'/>
                     </form>
                     
@@ -77,12 +82,12 @@ const [searchData, setsearchData] = useState('')
                 
                 
                 >
-                    { jikanData? jikanData.map((item, i)=>(
+                    {jikanData.map((item, i)=>(
 
                         <Card  key={i} image_url={item.image_url} title={item.title} url={item.url} />
 
                     ))
-                    :null }
+                    }
                     </Box>
                         
                 
