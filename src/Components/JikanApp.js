@@ -52,13 +52,10 @@ const [searchData, setsearchData] = useState('')
                         Jikan API
                 </Box>
                 <Box
-                display='flex'
-                // /flexDirection='row'
-                justifyContent='center'
-                alignItems='center'
+                p='0.5rem'
                 >
                     <form onSubmit={handleClick}>
-                        <InputBase required={true} type='text' placeholder='Seach Your Anime...' onChange={handleChange}/>
+                        <InputBase required={true}  type='text' placeholder='Seach Your Anime...' onChange={handleChange}/>
                         
                         <Button value='Search'/>
                     </form>
