@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
         width: '105px',
         
-        backgroundColor: 'black',
+        backgroundColor: '#AA5776',
         fontSize: '16px',
         color: 'white',
         //border: '2px solid',
@@ -31,7 +31,7 @@ export default function ContainedButtons({value}) {
     <div className={classes.root}>
       <Button type= 'submit' variant="contained">
           
-          <img src={Search}/>{value}
+          <img alt={"search"} src={Search}/>{value}
       </Button>
       
     </div>

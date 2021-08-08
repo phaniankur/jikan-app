@@ -1,8 +1,7 @@
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 import Box from '@material-ui/core/Box';
 import axios from 'axios'
 import Card from './Card'
-import Card_main from './Card_main'
 import { InputBase } from '@material-ui/core';
 import Button from './Button'
 

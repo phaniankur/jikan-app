@@ -5,9 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Box from './Style/Box'
 import Typography from '@material-ui/core/Typography';
-import { fontSize, fontWeight } from '@material-ui/system';
 
 const useStyles = makeStyles({
   root: {
