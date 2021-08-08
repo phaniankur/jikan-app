@@ -2,7 +2,8 @@ import React from 'react'
 import {BrowserRouter as Router,Route,
   Redirect,Switch} from 'react-router-dom';
 import JikanApp from './Components/JikanApp'
-import Home from './Pages/Home'
+import jikanApp from './Pages/jikanApp'
+import Home from './Pages/home'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/home" component={Home}>
           
         </Route>
-          <Route exact path="/app" component={JikanApp} />
+          <Route exact path="/app" component={jikanApp} />
         </Switch>
       
     </Router>
