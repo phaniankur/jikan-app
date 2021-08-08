@@ -1,10 +1,10 @@
 import React from 'react'
 import JikanApp from '../Components/JikanApp'
 
-function app() {
+function animeApp() {
     return (
         <JikanApp/>
     )
 }
 
-export default app
+export default animeApp
