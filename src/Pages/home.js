@@ -16,22 +16,23 @@ function Home() {
         height='90vh'
         >
             <Box
-            fontSize='5rem'
+            fontSize={{xs:'3rem', md: '5rem'}}
             >
                 Jikan API
             </Box>
             <Box
             fontSize={{xs:'18px', md:'20px'}}
             pt='1rem'
-            
+            textAlign={{xs:'center', md:'left'}}
             >UNOFFICIAL MYANIMELIST API</Box>
 
             
             <Box
             pt='1rem'
-            pb='1rem'
+            pb='1.5rem'
             width={{xs: '100%',md:'50%'}}
             fontSize={{xs:'15px', md: '18px'}}
+            textAlign={{xs:'center', md:'left'}}
             >
                 Jikan (時間) is an open-source PHP & REST API for the “most active online anime + manga community and database” — MyAnimeList.net. It parses the website to satisfy the need for an API.
             </Box>
