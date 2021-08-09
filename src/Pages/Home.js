@@ -1,5 +1,6 @@
 import React from 'react'
 import Box from '@material-ui/core/Box';
+import { Button } from '@material-ui/core';
 
 function Home() {
     return (
@@ -9,14 +10,13 @@ function Home() {
         display='flex'
         color='#fff'
         justifyContent='center'
-        alignItems={{xs: 'center',md:'flex-start'}}
+        alignItems={{xs: 'center', md:'flex-start'}}
         flexDirection='column'
         
         height='90vh'
         >
             <Box
             fontSize='5rem'
-            
             >
                 Jikan API
             </Box>
@@ -29,11 +29,13 @@ function Home() {
             
             <Box
             pt='1rem'
+            pb='1rem'
             width={{xs: '100%',md:'50%'}}
             fontSize={{xs:'15px', md: '18px'}}
-            >Jikan (時間) is an open-source PHP & REST API for the “most active online anime + manga community and database” — MyAnimeList.net. It parses the website to satisfy the need for an API.
+            >
+                Jikan (時間) is an open-source PHP & REST API for the “most active online anime + manga community and database” — MyAnimeList.net. It parses the website to satisfy the need for an API.
             </Box>
-            
+            <Button variant="contained" color="secondary" href='/app' size='large'>Get Started</Button>
         </Box>
         
         </>
